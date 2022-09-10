@@ -103,7 +103,7 @@ const SignIn = () => {
         <button className={Styles['login-btn']} onClick={signIn}>
           Login
         </button>
-        <Link to='/'>
+        <Link to='/Bike-app'>
           <button className={Styles['back-btn']}>Back</button>
         </Link>
       </div>

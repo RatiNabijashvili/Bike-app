@@ -23,7 +23,7 @@ const Registration = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (firstName && lastName && username && email && password) {
-      navigate('/')
+      navigate('/Bike-app')
       const person = {
         firstName,
         lastName,
@@ -111,7 +111,7 @@ const Registration = () => {
         <button className={Styles['registration-btn']} onClick={handleSubmit}>
           Register
         </button>
-        <Link to='/'>
+        <Link to='/Bike-app'>
           <button className={Styles['back-btn']} onClick={() => clearRegForm()}>
             Back
           </button>
