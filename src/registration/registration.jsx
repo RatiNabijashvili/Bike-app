@@ -23,7 +23,6 @@ const Registration = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (firstName && lastName && username && email && password) {
-      navigate('/Bike-app')
       const person = {
         firstName,
         lastName,
@@ -47,6 +46,7 @@ const Registration = () => {
           })
             .then(() => {
               alert('you successfully registered')
+              navigate('/Bike-app')
             })
             .catch((err) => {
               alert(err.message)
