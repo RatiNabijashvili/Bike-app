@@ -5,15 +5,15 @@ import Form from '../form/form'
 import { database } from '../firebase'
 import { collection, getDocs } from 'firebase/firestore'
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth'
-import {UserContex}  from '../userContex'
+import { UserContex } from '../userContex'
 
 const SignIn = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [login, setLogin] = useState([])
-  const {isAdmin, setIsAdmin} = useContext(UserContex)
-  const {isUser, setIsUser} = useContext(UserContex)
-  const {isAuth, setIsAuth} = useContext(UserContex)
+  const { isAdmin, setIsAdmin } = useContext(UserContex)
+  const { isUser, setIsUser } = useContext(UserContex)
+  const { isAuth, setIsAuth } = useContext(UserContex)
   const navigate = useNavigate()
 
   const signIn = (e) => {
@@ -75,8 +75,6 @@ const SignIn = () => {
     }
   }
 
-
-  
   const clearLogForm = () => {
     setEmail('')
     setPassword('')
@@ -84,34 +82,32 @@ const SignIn = () => {
 
   return (
     <div className={Styles['log-page']}>
-        <div>
-          <h2 className={Styles['log-text']}>Login</h2>
-        </div>
-        <div>
-          <Form
-            name='Email'
-            type='email'
-            value={email}
-            change={(e) => setEmail(e.target.value)}
-          />
-          <Form
-            name='Password'
-            type='password'
-            value={password}
-            change={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <div className={Styles['btnDiv']}>
-            <button className={Styles['login-btn']} onClick={signIn}>
-                Login
-            </button>
-            <Link to='/'>
-                <button className={Styles['back-btn']}>
-                    Back
-                </button>
-            </Link>
-        </div>
+      <div>
+        <h2 className={Styles['log-text']}>Login</h2>
       </div>
+      <div>
+        <Form
+          name='Email'
+          type='email'
+          value={email}
+          change={(e) => setEmail(e.target.value)}
+        />
+        <Form
+          name='Password'
+          type='password'
+          value={password}
+          change={(e) => setPassword(e.target.value)}
+        />
+      </div>
+      <div className={Styles['btnDiv']}>
+        <button className={Styles['login-btn']} onClick={signIn}>
+          Login
+        </button>
+        <Link to='/Bike-app'>
+          <button className={Styles['back-btn']}>Back</button>
+        </Link>
+      </div>
+    </div>
   )
 }
 

@@ -10,7 +10,7 @@ const Registration = () => {
   const auth = getAuth()
   const collectionRef = collection(database, 'users')
   const navigate = useNavigate()
-  
+
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
   const [username, setUsername] = useState('')
@@ -21,9 +21,9 @@ const Registration = () => {
   const userRole = 'user'
 
   const handleSubmit = (e) => {
-     e.preventDefault()
+    e.preventDefault()
     if (firstName && lastName && username && email && password) {
-      navigate('/')
+      navigate('/Bike-app')
       const person = {
         firstName,
         lastName,
@@ -60,65 +60,64 @@ const Registration = () => {
     } else {
       alert('You need to fill every form')
     }
-  } 
-  
-    const clearRegForm = () => {
-        setFirstName('')
-        setLastName('')
-        setUsername('')
-        setEmail('')
-        setPassword('')
-    }
+  }
 
+  const clearRegForm = () => {
+    setFirstName('')
+    setLastName('')
+    setUsername('')
+    setEmail('')
+    setPassword('')
+  }
 
   return (
-     <div className={Styles['reg-page']}>
-        <div>
-          <h2 className={Styles['reg-text']}>Registration</h2>
-        </div>
-        <div>
-          <Form
-            name='First Name'
-            type='text'
-            value={firstName}
-            change={(e) => setFirstName(e.target.value)}
-          />
-          <Form
-            name='Last Name'
-            type='text'
-            value={lastName}
-            change={(e) => setLastName(e.target.value)}
-          />
-          <Form
-            name='Username'
-            type='text'
-            value={username}
-            change={(e) => setUsername(e.target.value)}
-          />
-          <Form
-            name='Email'
-            type='email'
-            value={email}
-            change={(e) => setEmail(e.target.value)}
-          />
-          <Form
-            name='Password'
-            type='password'
-            value={password}
-            change={(e) => setPassword(e.target.value)}
-          />
-        </div>
-        <div className={Styles['btnDiv']}>
-          <button className={Styles['registration-btn']} onClick={handleSubmit}>
-              Register
-          </button>
-          <Link to='/'>
-            <button className={Styles['back-btn']} onClick={() => clearRegForm()}>
-                Back
-            </button>
-          </Link>  
-        </div>
+    <div className={Styles['reg-page']}>
+      <div>
+        <h2 className={Styles['reg-text']}>Registration</h2>
       </div>
+      <div>
+        <Form
+          name='First Name'
+          type='text'
+          value={firstName}
+          change={(e) => setFirstName(e.target.value)}
+        />
+        <Form
+          name='Last Name'
+          type='text'
+          value={lastName}
+          change={(e) => setLastName(e.target.value)}
+        />
+        <Form
+          name='Username'
+          type='text'
+          value={username}
+          change={(e) => setUsername(e.target.value)}
+        />
+        <Form
+          name='Email'
+          type='email'
+          value={email}
+          change={(e) => setEmail(e.target.value)}
+        />
+        <Form
+          name='Password'
+          type='password'
+          value={password}
+          change={(e) => setPassword(e.target.value)}
+        />
+      </div>
+      <div className={Styles['btnDiv']}>
+        <button className={Styles['registration-btn']} onClick={handleSubmit}>
+          Register
+        </button>
+        <Link to='/Bike-app'>
+          <button className={Styles['back-btn']} onClick={() => clearRegForm()}>
+            Back
+          </button>
+        </Link>
+      </div>
+    </div>
   )
 }
 
