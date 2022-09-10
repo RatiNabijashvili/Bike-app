@@ -46,9 +46,9 @@ function App() {
         }}
       >
         <Routes>
-          <Route path='/Bike-app' element={<Home />} />
-          <Route path='/Bike-app/registration' element={<Registration />} />
-          <Route path='/Bike-app/signIn' element={<SignIn />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/registration' element={<Registration />} />
+          <Route path='/signIn' element={<SignIn />} />
           {isAdmin ? (
             <Route path='admin'>
               <Route path='home' element={<HomeSection />} />

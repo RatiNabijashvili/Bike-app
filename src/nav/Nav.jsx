@@ -15,7 +15,7 @@ const Nav = () => {
     signOut(auth)
       .then(() => {
         alert('successfully log out')
-        navigate('/Bike-app')
+        navigate('/')
         setIsAuth(false)
         setIsAdmin(false)
         setIsUser(false)
