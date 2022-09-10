@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.log-page {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.log-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.btnDiv {
+  width: 22em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.login-btn {
+  background-color: #ffc707;
+  color: #ffffff;
+  border: none;
+  outline: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 9em;
+  height: 2.5em;
+  text-transform: uppercase;
+}
+
+.login-btn:hover {
+  cursor: pointer;
+  border: 1px solid #ffc707;
+  background-color: #ffffff;
+  color: #ffc707;
+}
+
+.back-btn {
+  background-color: #6b6b6c;
+  color: #ffffff;
+  border: none;
+  outline: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 9em;
+  height: 2.5em;
+  text-transform: uppercase;
+}
+
+.back-btn:hover {
+  cursor: pointer;
+  border: 1px solid #6b6b6c;
+  background-color: #ffffff;
+  color: #6b6b6c;
+}
+
+@media (min-width: 1800px) {
+  .log-page {
+    margin-top: 1.5em;
+  }
+  .log-text {
+    font-size: 2rem;
+  }
+  .btnDiv {
+    width: 32em;
+    margin-top: 3em;
+  }
+  .login-btn {
+    font-size: 0.9rem;
+  }
+  .back-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .log-page {
+    margin-top: 1.8em;
+  }
+  .log-text {
+    font-size: 2.2rem;
+  }
+  .btnDiv {
+    width: 35em;
+    margin-top: 3em;
+  }
+  .login-btn {
+    font-size: 1.1rem;
+  }
+  .back-btn {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 2200px) {
+  .log-page {
+    margin-top: 2em;
+  }
+  .log-text {
+    font-size: 2.8rem;
+  }
+  .btnDiv {
+    width: 48em;
+    margin-top: 5em;
+  }
+  .login-btn {
+    font-size: 1.4rem;
+  }
+  .back-btn {
+    font-size: 1.4rem;
+  }
+}

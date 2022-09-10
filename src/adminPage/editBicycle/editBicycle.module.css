@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.changeData-div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5em;
+  align-items: center;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.select {
+  outline: 0;
+}
+
+.btnDiv {
+  width: 22em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.add-btn {
+  background-color: #ffc707;
+  color: #ffffff;
+  border: none;
+  outline: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 7em;
+  height: 2.5em;
+  text-transform: uppercase;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+  border: 1px solid #ffc707;
+  background-color: #ffffff;
+  color: #ffc707;
+}
+
+.back-btn {
+  background-color: #6b6b6c;
+  color: #ffffff;
+  border: none;
+  outline: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 9em;
+  height: 2.5em;
+  text-transform: uppercase;
+}
+
+.back-btn:hover {
+  cursor: pointer;
+  border: 1px solid #6b6b6c;
+  background-color: #ffffff;
+  color: #6b6b6c;
+}
+
+@media (min-width: 1800px) {
+  .changeData-div {
+    margin-top: 5em;
+  }
+  .btnDiv {
+    margin-top: 3em;
+    width: 31em;
+  }
+  .add-btn {
+    font-size: 0.8em;
+  }
+  .back-btn {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .changeData-div {
+    margin-top: 8em;
+  }
+  .btnDiv {
+    margin-top: 3em;
+    width: 35em;
+  }
+  .add-btn {
+    font-size: 1em;
+  }
+  .back-btn {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 2200px) {
+  .changeData-div {
+    margin-top: 8em;
+  }
+  .btnDiv {
+    margin-top: 3em;
+    width: 48em;
+  }
+  .add-btn {
+    font-size: 1.2em;
+  }
+  .back-btn {
+    font-size: 1.2em;
+  }
+}

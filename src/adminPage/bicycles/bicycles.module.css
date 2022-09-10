@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+ul {
+  padding: 0;
+  margin-top: 2em;
+}
+
+.bicycle-section {
+  border: 1px solid #6b6b6c;
+  margin: 0 auto;
+  width: 60%;
+  height: 25em;
+  margin-top: 5em;
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.userNav-h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.add-btn {
+  background-color: #ffc707;
+  color: #ffffff;
+  border: none;
+  outline: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 7em;
+  height: 2.5em;
+  text-transform: uppercase;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+  border: 1px solid #ffc707;
+  background-color: #ffffff;
+  color: #ffc707;
+}
+
+.user-list {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+.name {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 0.5em;
+  margin: 0;
+  border-left: 2px solid #ffc707;
+}
+
+.edit-btn {
+  background-color: #aeafaf;
+  color: #ffffff;
+  border: none;
+  outline: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  width: 5em;
+  height: 2em;
+  text-transform: uppercase;
+}
+
+.edit-btn:hover {
+  cursor: pointer;
+  border: 1px solid #aeafaf;
+  background-color: #ffffff;
+  color: #aeafaf;
+}
+
+.delete-btn {
+  margin-left: 2em;
+  background-color: #6b6b6c;
+  color: #ffffff;
+  border: none;
+  outline: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  width: 6em;
+  height: 2em;
+  text-transform: uppercase;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+  border: 1px solid #6b6b6c;
+  background-color: #ffffff;
+  color: #6b6b6c;
+}
+
+.edit-page {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+}
+
+@media (min-width: 1800px) {
+  .bicycle-section {
+    margin-top: 5em;
+    height: 30em;
+  }
+  .user-nav {
+    margin-top: 1em;
+  }
+  .userNav-h2 {
+    font-size: 1.5em;
+  }
+  .add-btn {
+    font-size: 0.8em;
+  }
+  .user-list {
+    margin-bottom: 1.3em;
+  }
+  .name {
+    font-size: 1.2em;
+    border-left: 2px solid #ffc707;
+  }
+  .edit-btn,
+  .delete-btn {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .bicycle-section {
+    margin-top: 8em;
+    height: 35em;
+  }
+  .user-nav {
+    margin-top: 1.5em;
+  }
+  .userNav-h2 {
+    font-size: 1.9em;
+  }
+  .add-btn {
+    font-size: 0.9em;
+  }
+  .user-list {
+    margin-bottom: 1.5em;
+  }
+  .name {
+    font-size: 1.4em;
+    border-left: 2.8px solid #ffc707;
+  }
+  .edit-btn,
+  .delete-btn {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 2200px) {
+  .bicycle-section {
+    margin-top: 10em;
+    height: 45em;
+  }
+  .user-nav {
+    margin-top: 2em;
+  }
+  .userNav-h2 {
+    font-size: 2.5em;
+  }
+  .add-btn {
+    font-size: 1.2em;
+  }
+  .user-list {
+    margin-bottom: 2em;
+  }
+  .name {
+    font-size: 1.9em;
+    border-left: 3px solid #ffc707;
+  }
+  .edit-btn,
+  .delete-btn {
+    font-size: 1.2em;
+  }
+}

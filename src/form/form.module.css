@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #292929;
+}
+
+.form-h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.form-input {
+  border: 1px solid #6b6b6c;
+  outline: none;
+  width: 25em;
+  padding: 8px;
+  margin-bottom: 0.8em;
+}
+
+@media (min-width: 1800px) {
+  .form-text {
+    font-size: 1.3rem;
+  }
+  .form-input {
+    height: 1.8em;
+    padding: 0.4em 0.6em;
+    font-size: 1rem;
+    width: 30em;
+  }
+  .form-h2 {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .form-h2 {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 2000px) {
+  .form-text {
+    font-size: 1.6rem;
+  }
+  .form-input {
+    height: 2em;
+    padding: 0.3em 0.7em;
+    font-size: 1.1rem;
+    width: 30em;
+  }
+}
+
+@media (min-width: 2200px) {
+  .form-text {
+    font-size: 2rem;
+  }
+  .form-input {
+    height: 2em;
+    padding: 0.3em 1em;
+    font-size: 1.5rem;
+    width: 30em;
+  }
+  .form-h2 {
+    font-size: 2em;
+  }
+}

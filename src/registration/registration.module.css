@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.reg-page {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.reg-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 1.5em 0;
+}
+
+.btnDiv {
+  width: 22em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.registration-btn {
+  background-color: #ffc707;
+  color: #ffffff;
+  border: none;
+  outline: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 9em;
+  height: 2.5em;
+  text-transform: uppercase;
+}
+
+.back-btn {
+  background-color: #6b6b6c;
+  color: #ffffff;
+  border: none;
+  outline: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 9em;
+  height: 2.5em;
+  text-transform: uppercase;
+}
+
+.registration-btn:hover {
+  cursor: pointer;
+  border: 1px solid #ffc707;
+  background-color: #ffffff;
+  color: #ffc707;
+}
+
+.back-btn:hover {
+  cursor: pointer;
+  border: 1px solid #6b6b6c;
+  background-color: #ffffff;
+  color: #6b6b6c;
+}
+
+@media (min-width: 1800px) {
+  .reg-page {
+    margin-top: 2em;
+  }
+  .reg-text {
+    font-size: 1.5rem;
+  }
+  .btnDiv {
+    width: 32em;
+    margin-top: 4em;
+  }
+  .registration-btn {
+    font-size: 1.1rem;
+  }
+  .back-btn {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .reg-page {
+    margin-top: 3em;
+  }
+  .reg-text {
+    font-size: 1.7rem;
+  }
+  .btnDiv {
+    width: 35em;
+    margin-top: 4em;
+  }
+  .registration-btn {
+    font-size: 1.2rem;
+  }
+  .back-btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 2200px) {
+  .reg-page {
+    margin-top: 3em;
+  }
+  .reg-text {
+    font-size: 2.5rem;
+  }
+  .btnDiv {
+    width: 49em;
+    margin-top: 5em;
+  }
+  .registration-btn {
+    font-size: 1.6rem;
+  }
+  .back-btn {
+    font-size: 1.6rem;
+  }
+}
