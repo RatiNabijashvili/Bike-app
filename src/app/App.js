@@ -46,7 +46,7 @@ function App() {
         }}
       >
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/Bike-app' element={<Home />} />
           <Route path='registration' element={<Registration />} />
           <Route path='signIn' element={<SignIn />} />
           {isAdmin ? (
