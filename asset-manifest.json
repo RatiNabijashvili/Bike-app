@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Bike-app/static/css/main.2048de20.css",
-    "main.js": "/Bike-app/static/js/main.e10ad5bc.js",
-    "static/media/01-01-1000.jpg": "/Bike-app/static/media/01-01-1000.694b1f6582f90c65df5a.jpg",
-    "index.html": "/Bike-app/index.html",
-    "static/media/VectorDown.svg": "/Bike-app/static/media/VectorDown.422cacae21be46adde16008dc69e4cff.svg",
-    "static/media/VectorUp.svg": "/Bike-app/static/media/VectorUp.eaef0593879e3046c399594a944a60a0.svg",
-    "main.2048de20.css.map": "/Bike-app/static/css/main.2048de20.css.map",
-    "main.e10ad5bc.js.map": "/Bike-app/static/js/main.e10ad5bc.js.map"
+    "main.css": "/static/css/main.2048de20.css",
+    "main.js": "/static/js/main.d72bd39d.js",
+    "static/media/01-01-1000.jpg": "/static/media/01-01-1000.694b1f6582f90c65df5a.jpg",
+    "index.html": "/index.html",
+    "static/media/VectorDown.svg": "/static/media/VectorDown.422cacae21be46adde16008dc69e4cff.svg",
+    "static/media/VectorUp.svg": "/static/media/VectorUp.eaef0593879e3046c399594a944a60a0.svg",
+    "main.2048de20.css.map": "/static/css/main.2048de20.css.map",
+    "main.d72bd39d.js.map": "/static/js/main.d72bd39d.js.map"
   },
   "entrypoints": [
     "static/css/main.2048de20.css",
-    "static/js/main.e10ad5bc.js"
+    "static/js/main.d72bd39d.js"
   ]
 }
